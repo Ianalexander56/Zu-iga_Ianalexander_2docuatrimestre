@@ -1,4 +1,4 @@
-?php
+<?php
     // Clase 02 - 12/01/2026
 
     // operadores en PHP
