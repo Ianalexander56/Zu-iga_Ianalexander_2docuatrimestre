@@ -1,0 +1,1 @@
+- Buen trabajo Ian, espero que continues intentando los ejercicios, recuerda que tienes chamba, ya que hiciste uso de REGEX (Regular Expressions), tema que aún no me hemos visto, pero es importante que aprendas para qué sirven, esto con la finalidad de que puedas utilizarlas con mayor conciencia. Sigue así
