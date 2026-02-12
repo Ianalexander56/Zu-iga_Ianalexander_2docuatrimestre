@@ -36,7 +36,7 @@ for ($i = 0; $i < count($numeros); $i++) {
         $pares[] = $numeros[$i];
     } else {
         $impares[] = $numeros[$i];
-    }
+    }         
     echo "<p>Números pares: " . implode(", ", $pares) . "</p>";
     echo "<p>Números impares: " . implode(", ", $impares) . "</p>";
 }
@@ -52,7 +52,7 @@ $productos = [
     "Sandias" => 16,
     "manzanas" => 76,
     "uvas" => 4,
-    "peras" => 3
+    "peras" => 3 
 ];
 
 foreach ($productos as $producto => $cantidad) {
