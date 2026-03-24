@@ -1,0 +1,1 @@
+- Tu lógica es correcta, pero no tienes formularios que procesen y envien datos al archivo PHP.
