@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo2</title>
+</head>
+<body>
+    <h1></h1>
+    <br>
+    <h2>Formulario de satisfaccion</h2>
+    <form action="Ejemplo2.php" method="post"></form>
+        <label>Ingrese su nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label>Seleccione su nivel de satisfaccion general: </label>
+        <select name="satisfaccion">
+            <option value="Muy_Satisfecho">Muy Satisfecho</option>
+            <option value="Satisfecho">Satisfecho</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Insatisfecho">Insatisfecho</option>
+            <option value="Muy_Insatisfecho">Muy Insatisfecho</option>
+        </select>
+        <br>
+        <label>Comentarios adicionales:</label>
+        <textarea name="comentarios" cols="40" rows="4"></textarea>
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

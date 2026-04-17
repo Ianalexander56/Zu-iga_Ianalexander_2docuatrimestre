@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora TMB</title>
+</head>
+<body>
+
+<h2>Calculadora de TMB (Harris-Benedict)</h2>
+
+<form action="Ejercicio4.php" method="POST">
+
+Nombre:<br>
+<input type="text" name="nombre" required><br><br>
+
+Sexo:<br>
+<select name="sexo" required>
+    <option value="hombre">Hombre</option>
+    <option value="mujer">Mujer</option>
+</select><br><br>
+
+Peso (kg):<br>
+<input type="number" name="peso" required><br><br>
+
+Altura (cm):<br>
+<input type="number" name="altura" required><br><br>
+
+Edad:<br>
+<input type="number" name="edad" required><br><br>
+
+Nivel de actividad fisica:<br>
+<select name="actividad" required>
+    <option value="1.2">Sedentario</option>
+    <option value="1.375">Ligero</option>
+    <option value="1.55">Moderado</option>
+    <option value="1.725">Activo</option>
+</select><br><br>
+
+<input type="submit" value="Calcular">
+
+</form>
+
+</body>
+</html>

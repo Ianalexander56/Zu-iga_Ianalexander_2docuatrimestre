@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Crea un formulario que solicite el nombre de un producto y su precio sin IVA.
+Al enviar el formulario, se deberá calcular el IVA y mostrar lo siguiente:</h1>
+<ul>
+    <li> monto del IVA (16%).</li>
+    <li> total con IVA incluido.</li>
+</ul>
+    <form action="ejercicio2.php" method="get">
+        <label for="producto">Nombre del producto:</label>
+        <input type="text" id="producto" name="producto" required>
+        <label for="precio">Precio sin IVA:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+        <button type="submit">Calcular IVA</button>
+    </form>
+</body>
+</html>

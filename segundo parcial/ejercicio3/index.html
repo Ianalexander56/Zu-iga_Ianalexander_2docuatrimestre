@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Haz un programa que solicite al usuario el nombre de un artículo, su precio
+original y el porcentaje de descuento. Posteriormente muestra en pantalla:</h1>
+<ul>
+    <li>a. monto del descuento.</li>
+    <li>b. precio final con descuento aplicado.</li>
+    <li>c. Un mensaje indicando si el descuento es “Bajo” (menos del 10%),
+    “Moderado (10% al 30%) o “Alto” (más del 30%).</li>
+</ul>
+<form action="ejercicio3.php" method="get">
+    <label for="articulo">Nombre del producto:</label>
+    <input type="text" id="articulo" name="articulo"><br>
+
+    <label for="precio">Precio original:</label>
+    <input type="number" id="precio" name="precio"><br>
+
+    <label for="descuento">Porcentaje de descuento:</label>
+    <input type="number" id="descuento" name="descuento"><br>
+    <input type="submit" value="Calcular" name="submit">
+</form>
+</body>
+</html>

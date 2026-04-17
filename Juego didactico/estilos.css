@@ -1,0 +1,37 @@
+body{
+    background:black;
+    color:#00ffff;
+    font-family:Arial;
+    text-align:center;
+}
+
+.contenedor{
+    margin-top:100px;
+}
+
+h1{
+    text-shadow:0 0 15px #00ffff;
+}
+
+#pregunta{
+    font-size:22px;
+    margin:20px;
+}
+
+button{
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    width:250px;
+    background:black;
+    color:#00ffff;
+    border:2px solid #00ffff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00ffff;
+    color:black;
+    box-shadow:0 0 15px #00ffff;
+}

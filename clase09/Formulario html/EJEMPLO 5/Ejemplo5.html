@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo5</title>
+</head>
+<body>
+    <h1>Ejemplo 5: Haz un programa que gestione las calificacione de un alumno. El formulario debe pedir</h1>
+    <hr>
+    <form action="Ejemplo5.php" method="post">
+        <label type="text" name="nombre">
+            <br>
+            <label> materia: </label>
+            <select name="materia">
+                <option value="matematicas">Matemáticas</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="Español">Español</option>
+                <option value="Algebra">Álgebra</option>
+                <option value="Ciencias">Ciencias</option>
+            </select>
+        </label>
+        <br>
+        <label> Calificación: </label>
+        <input type="number" name="calificacion" min="0" max="100">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

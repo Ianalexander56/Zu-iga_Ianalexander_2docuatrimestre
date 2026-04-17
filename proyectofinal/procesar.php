@@ -1,0 +1,54 @@
+<?php
+// Mostrar errores
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Incluir funciones
+require("validaciones.php");
+
+// Verificar que venga del formulario
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $nombre = $_POST['nombre'] ?? '';
+    $correo = $_POST['correo'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    $errores = [];
+
+    // Validaciones
+    if (validarVacio($nombre)) {
+        $errores[] = "El campo nombre es obligatorio";
+    }
+
+    if (validarVacio($correo)) {
+        $errores[] = "El campo correo es obligatorio";
+    }
+
+    if (validarVacio($password)) {
+        $errores[] = "El campo contraseña es obligatorio";
+    }
+
+    if (!validarVacio($correo) && !validarEmail($correo)) {
+        $errores[] = "El correo electrónico no tiene un formato válido";
+    }
+
+    if (!validarVacio($password) && !validarPassword($password)) {
+        $errores[] = "La contraseña debe tener al menos 8 caracteres";
+    }
+
+    // Resultado
+    if (count($errores) > 0) {
+        echo "<h3>Errores:</h3>";
+        foreach ($errores as $error) {
+            echo "<p style='color:red;'>$error</p>";
+        }
+        echo "<br><a href='index.php'>Volver</a>";
+    } else {
+        echo "<h3 style='color:green;'>Registro exitoso</h3>";
+        echo "<br><a href='index.php'>Regresar</a>";
+    }
+
+} else {
+    echo "Acceso no permitido";
+}
+?>
