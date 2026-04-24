@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AGENDA DE CONTACTOS</h1>
+        <h2>Gestiona tus contactos de manera sencilla y eficiente</h2>
+    </header>
+
+    <main class="container">
+        <div id="authContainer">
+            <div class="card" id="loginForm">
+                <h2>Bienvenido, inicie sesión</h2>
+                <input type="text" id="loginUser" placeholder="Nombre o Correo">
+                <input type="password" id="loginPass" placeholder="Contraseña">
+                <button onclick="login()">Entrar</button>
+                <p>¿No tienes cuenta? <a href="#" onclick="toggleAuth()">Regístrate</a></p>
+            </div>
+
+            <div class="card" id="registerForm" style="display: none;">
+                <h2>Crea tu cuenta</h2>
+                <input type="text" id="regName" placeholder="Nombre completo">
+                <input type="email" id="regEmail" placeholder="Correo electrónico">
+                <input type="password" id="regPass" placeholder="Contraseña (8 a 10 caracteres)">
+                <button onclick="register()">Crear cuenta</button>
+                <p>¿Ya tienes cuenta? <a href="#" onclick="toggleAuth()">Inicia sesión</a></p>
+            </div>
+        </div>
+
+        <div id="agendaContent" style="display: none;">
+            <div style="text-align: right;">
+                <button id="logoutBtn" onclick="location.reload()" style="width:auto; background: #ff4d4d;">Cerrar Sesión</button>
+            </div>
+            
+            <section class="card">
+                <h2>Agregar Contacto</h2>
+                <input type="text" id="name" placeholder="Nombre">
+                <input type="text" id="phone" placeholder="Teléfono (10 dígitos)" maxlength="10">
+                <input type="email" id="email" placeholder="Correo">
+                <button id="saveBtn" onclick="addContact()">Guardar</button>
+            </section>
+
+            <section class="card">
+                <input type="text" id="search" placeholder="Buscar contacto..." oninput="renderContacts(this.value)">
+                <div id="contactList" style="margin-top: 20px;"></div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+:root {
+    --primary: #0a1d52;
+    --secondary: #2923e0;
+    --bg: #ffffff;
+    --white: #ffffff;
+    --text: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+}
+
+header {
+    background: var(--primary);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #0b0a68;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--secondary);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #04c04c;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+    animation: slideIn 0.4s ease;
+}
+
+/* Estilo específico para el botón eliminar */
+.delete {
+    background: #2563eb; /* Azul (puedes cambiarlo a #e11d48 si lo quieres rojo) */
+    padding: 5px 15px;
+    border-radius: 6px;
+    width: auto;          /* <--- ESTO QUITA EL 100% */
+    min-width: 80px;      /* Un ancho mínimo para que no se vea minúsculo */
+    font-size: 0.9rem;
+    margin-left: 15px;    /* Espacio entre el texto y el botón */
+}
+
+.delete:hover {
+    background: #dc2626; /* Cambia a rojo cuando pasas el mouse */
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);} 
+    to {opacity: 1; transform: translateY(0);} 
+}
+
+@keyframes slideIn {
+    from {opacity: 0; transform: translateX(-20px);} 
+    to {opacity: 1; transform: translateX(0);} 
+}
